@@ -1,4 +1,34 @@
-<html>
-  <title>Ehum Illa</title>
-  <h1>Welome</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple E-Commerce Shop</h1>
+        <div class="cart">
+            🛒 Cart: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="products">
+            <!-- Products will be injected by JS -->
+        </section>
+        <aside id="cart-details" class="hidden">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-list"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple E-Commerce</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
